@@ -14,7 +14,22 @@
  *= require_self
  */
 
-
 .box-todo {
 	padding: 20px 15px;
+}
+
+.text-info {
+	font-size: 11px;
+	line-height: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #1c1c1c;
+}
+
+p {
+	text-transform: uppercase;
+}
+
+.upp {
+	text-transform: uppercase;
 }

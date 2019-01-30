@@ -1,8 +1,8 @@
 <div class="well">
     <%= form_with model: @todo, local: true do |t| %>
-      <%= t.label :description %>
+      <%= t.label :description, 'TU TAREA' %>
       <%= t.text_field :description %>
-      <%= t.label :completed %>
+      <%= t.label :completed, 'COMPLETADO' %>
       <%= t.check_box :completed %>
       <%= t.submit "Enviar", class: "btn btn-warning" %>
     <% end %>

@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="container col-lg-6">
+  <div class="col-lg-6">
     <% @todos.each do |todo| %>
-    <h2> Tarea <%= todo.id %></h2>
-    <div class="well"><%= todo.description %> <br> <%= todo.completed %></div>
+    <h3 class="upp"> Tarea <%= todo.id %></h3>
+    <div class="well"><p><%= todo.description %></p> <br> <p><strong><%= todo.completed %></strong></p></div>
     <%= link_to "Show ", todo, class: 'btn btn-primary' %>
     <%= link_to "Edit ", edit_todo_path(todo), class: 'btn btn-default' %>
     <%= link_to "Destroy ", todo, method: :delete, class: 'btn btn-danger' %>

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="col-lg-6">
-    <h1>No completados</h1>
+    <h3 class="upp">No completados</h3>
     <% @todos.each do |t| %>
     <% if t.completed == false %>
     <div class="well">
@@ -12,7 +12,7 @@
 
   <div class="container">
     <div class="col-lg-6">
-    <h1>Completados</h1>
+    <h3 class="upp">Completados</h3>
     <% @todos.each do |t| %>
     <% if t.completed  %>
     <div class="well">
