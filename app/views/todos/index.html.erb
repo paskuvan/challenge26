@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="container col-lg-6">
+    <% @todos.each do |todo| %>
+    <h2> Tarea <%= todo.id %></h2>
+    <div class="well"><%= todo.description %> <br> <%= todo.completed %></div>
+    <%= link_to "Show ", todo, class: 'btn btn-primary' %>
+    <%= link_to "Edit ", edit_todo_path(todo), class: 'btn btn-default' %>
+    <%= link_to "Destroy ", todo, method: :delete, class: 'btn btn-danger' %>
+    <%= link_to "Completed ", complete_todo_path(todo), class: 'btn btn-warning' %>
+    <% end %> <br>
+  </div>
+ </div>
+
+ <div class="box-todo container">
+ 	<div class="col-lg-6">
+        <%= link_to "Crear una nueva tarea ", todos_new_path, class: 'boton btn btn-success btn-lg' %>
+    </div>
+ </div>
+

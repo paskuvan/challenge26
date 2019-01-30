@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+
+.box-todo {
+	padding: 20px 15px;
+}
